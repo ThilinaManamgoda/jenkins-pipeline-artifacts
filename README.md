@@ -1,6 +1,6 @@
 # jenkins-pipeline-artifacts
 
-This repository contains the resources needed for the CICD pipeline
+This repository contains the resources needed for the CICD pipelines
 
 #### Folder Structure
 The following diagram shows the folder structure in this repository:
