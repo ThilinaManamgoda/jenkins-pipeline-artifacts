@@ -56,6 +56,7 @@ node(NODE_MASTER) {
             log.info "Setting up the Environment"
             file = load ENV
             env.REGION = getAvailabilityZone
+            checkout poll: true, scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/ThilinaManamgoda/cicd-test-artifacts.git']]]
             cloneRepoToDir env.GIT_REPO_ARTIFACTS, ARTIFACTS_DIR
             cloneRepoToDir env.GIT_REPO_CF, DEPLOYMENT_DIR
             cloneRepoToDir env.GIT_REPO_PUPPET, PUPPET_CONF_DIR
