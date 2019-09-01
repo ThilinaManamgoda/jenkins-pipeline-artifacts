@@ -1,4 +1,4 @@
-# jenkins-pipeline-artifacts
+# jenkins-pipeline-artifacts-test
 
 This repository contains the resources needed for the CICD pipeline
 
